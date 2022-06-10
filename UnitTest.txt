@@ -1,0 +1,147 @@
+#include "Cache.h"
+#include "MainMemory.h"
+#include "Manager.h"
+#include "ReaderCreator.h"
+#include "WriterCreator.h"
+#include "Util.h"
+
+using namespace std;
+
+int main(int argc, char *argv[])
+{
+//    {
+//            int x;
+//            LOG("%d %d", x, Util::checkReaderLine("1", x))
+//            LOG("%d %d", x, Util::checkReaderLine("100", x))
+//            LOG("%d %d", x, Util::checkReaderLine("005", x))
+//            LOG("%d %d", x, Util::checkReaderLine("00", x))
+//            LOG("%d %d", x, Util::checkReaderLine("-0", x))
+//            LOG("%d %d", x, Util::checkReaderLine("abc", x))
+//            LOG("%d %d", x, Util::checkReaderLine("2 abc", x))
+//            LOG("%d %d", x, Util::checkReaderLine("abc213", x))
+//            LOG("%d %d", x, Util::checkReaderLine(" ", x))
+//            LOG("%d %d", x, Util::checkReaderLine("", x))
+//            LOG("%d %d", x, Util::checkReaderLine("1.2", x))
+//    }
+//    {
+//            string v;
+//            int x;
+//            LOG("%d %s %d", x,v.c_str(), Util::checkWriterLine("1 10", x,v))
+//            LOG("%d %s %d", x,v.c_str(), Util::checkWriterLine("100 abc", x,v))
+//            LOG("%d %s %d", x,v.c_str(), Util::checkWriterLine("005 01a", x,v))
+//            LOG("%d %s %d", x,v.c_str(), Util::checkWriterLine("00 ", x,v))
+//            LOG("%d %s %d", x,v.c_str(), Util::checkWriterLine("-0 1", x,v))
+//            LOG("%d %s %d", x,v.c_str(), Util::checkWriterLine("111", x,v))
+//            LOG("%d %s %d", x,v.c_str(), Util::checkWriterLine("a 1", x,v))
+//            LOG("%d %s %d", x,v.c_str(), Util::checkWriterLine("a1c", x,v))
+//            LOG("%d %s %d", x,v.c_str(), Util::checkWriterLine(" ", x,v))
+//            LOG("%d %s %d", x,v.c_str(), Util::checkWriterLine("", x,v))
+//            LOG("%d %s %d", x,v.c_str(), Util::checkWriterLine("1.2 a", x,v))
+//    }
+//    {
+//        Cache cache(2);
+//        bool miss;
+//        LOG("%d %s", miss, cache.getValue(1, miss).c_str());
+//    }
+//    {
+//        Cache cache(2);
+//        bool miss;
+//        cache.addValue(1, "10");
+//        LOG("%d %s", miss, cache.getValue(1, miss).c_str());
+//    }
+//    {
+//        Cache cache(2);
+//        bool miss;
+//        cache.addValue(1, "10");
+//        cache.addValue(2, "15");
+//        cache.getValue(2, miss);
+//        cache.addValue(3, "11");
+//        LOG("%d %s", miss, cache.getValue(1, miss).c_str());
+//    }
+//    {
+//        Cache cache(2);
+//        bool miss;
+//        cache.addValue(1, "10");
+//        cache.addValue(2, "15");
+//        cache.getValue(1, miss);
+//        cache.addValue(3, "11");
+//        LOG("%d %s", miss, cache.getValue(1, miss).c_str());
+//    }
+//    {
+//        Cache cache(2);
+//        bool miss;
+//        cache.updateValue(1, "12");
+//        LOG("%d %s", miss, cache.getValue(1, miss).c_str());
+//    }
+//    {
+//        Cache cache(2);
+//        bool miss;
+//        cache.addValue(1, "10");
+//        cache.updateValue(1, "12");
+//        LOG("%d %s", miss, cache.getValue(1, miss).c_str());
+//    }
+//    {
+//        Cache cache(0);
+//        bool miss;
+//        cache.addValue(1, "10");
+//        LOG("%d %s", miss, cache.getValue(1, miss).c_str());
+//    }
+//    {
+//        Cache cache(2);
+//        bool miss;
+//        cache.addValue(1, "10");
+//        LOG("%d %s", miss, cache.getValue(1, miss).c_str());
+//    }
+//    {
+//        Cache cache(2);
+//        bool miss;
+//        cache.addValue(1, "10");
+//        cache.addValue(2, "15");
+//        cache.addValue(3, "20");
+//        LOG("%d %s", miss, cache.getValue(3, miss).c_str());
+//    }
+//    {
+//        Cache cache(2);
+//        bool miss;
+//        cache.addValue(1, "10");
+//        cache.addValue(2, "15");
+//        cache.addValue(2, "20");
+//        cache.addValue(3, "15");
+//        LOG("%d %s", miss, cache.getValue(2, miss).c_str());
+//    }
+//    {
+//        MainMemory mem("items_file.txt");
+//        LOG("%s",mem.readLine(2).c_str());
+//    }
+//    {
+//        MainMemory mem("items_file.txt");
+//        LOG("%s",mem.readLine(20).c_str());
+//    }
+//    {
+//        MainMemory mem("items_file.txt");
+//        LOG("%s",mem.readLine(10).c_str());
+//    }
+//    {
+//        MainMemory mem("items_file.txt");
+//        mem.writeLine(2, "-5");
+//    }
+//    {
+//        MainMemory mem("items_file.txt");
+//        mem.writeLine(6, "-10");
+//    }
+//    {
+//        MainMemory mem("items_file.txt");
+//        mem.writeLine(-10, "10");
+//    }
+//    {
+//        MainMemory mem("items_file.txt");
+//        mem.writeLine(-10, "10");
+//    }
+//    {
+//        Manager::getIns()->init("-1", "items_file.txt");
+//    }
+//    {
+//        Manager::getIns()->init("5", "items_file.txt");
+//    }
+	return EXIT_SUCCESS;
+}
